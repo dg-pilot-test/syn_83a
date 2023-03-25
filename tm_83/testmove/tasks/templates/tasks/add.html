@@ -1,0 +1,29 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+<script>
+    alert( 'before form in add' )
+  
+</script>
+
+    <h1>Add in Task</h1>
+    <form action="{% url 'tasks:add' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit"  id= "fname" >
+    </form>
+    <a href="{% url 'tasks:index' %}">viewsynonyms</a>
+
+<script>
+    document.getElementById("id_task").onblur = function() {myFunction()};
+
+function myFunction() {
+  alert("Input field lost focus.");
+}
+
+
+    alert('add jsut called')
+</script>
+
+
+{% endblock %}
