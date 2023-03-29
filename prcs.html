@@ -1,0 +1,105 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+<h1>Tasks in prcs</h1>
+
+<p id="s">
+
+
+</p>
+<script>
+    // alert('just before prcs exe')
+</script>
+
+
+
+    <!-- <P id = "s">    {{form}}</P> -->
+    <a href="{% url 'tasks:add' %}">new synonyms </a>
+    <p id ="s"></p>
+    <script type="text/javascript"> 
+        var a = "{{word}}"
+console.log(a);
+        alert('{{word}}');
+// var nmestr = {{ word|safe }};
+    var nmestr = { word };
+    //const name = '{{word}}';
+    console.log(nmestr);
+    //const obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+    // alert('just a tesst');
+    //const nmestr = JSON.parse(name);
+    alert(nmestr);
+
+
+
+
+   
+    //const nmestr = JSON.parse( "{{data}}");
+  
+
+   
+
+    // let centr = 0;
+    // let cif = 0;
+    // let cels = 0;
+
+
+//     function inside2(nmestr) {
+//         function addElement() {
+//             // create a new div element
+//             const newDiv = document.createElement("p");
+//             // and give it some content
+//             const newContent = document.createTextNode(nmestr[i]);
+//             // add the text node to the newly created div
+//             newDiv.appendChild(newContent);
+//             // add the newly created element and its content into the DOM
+//             const currentDiv = document.getElementById("demo2");
+//             document.body.insertBefore(newDiv, currentDiv);
+//         }
+
+//         centr++;
+
+//         //console.log('enter', centr);
+
+//         for (i in nmestr) {
+
+
+//             if (typeof nmestr[i] === ('object')) {
+//                 cif++;
+//                 // console.log(' if .. ',  'OBJECT.');
+
+
+//                 inside2(nmestr[i]);
+//             }
+
+//             if (i === 'text') {
+//                 //document.write(nmestr[i]) + '\r\n';
+//                 if (nmestr[i] != undefined) {
+
+//                     // console.log(typeof i, '...', i, '..', nmestr[i]);
+//                     console.log(nmestr[i]);
+
+//                     addElement();
+//                     // document.getElementById("demo2").innerHTML = nmestr[i] + " <br /> will it ";
+//                     //document.write("Hello World!");
+//                 }
+//                 //console.log('i===text  ',nmestr[i]);
+//             }
+//         }
+//     }
+//     inside2(nmestr);
+
+ 
+
+
+//         document.getElementById('s').innerHTML= a;
+//         console.log(a);
+
+// // alert('prcs just called')
+
+        
+     </script>
+
+
+
+
+{% endblock %}
