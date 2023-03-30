@@ -1,0 +1,19 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+    <!-- <P id = "s">    {{form}}</P> -->
+    <a href="{% url 'tasks:add' %}">View All from prcs addTasks</a>
+    <p id ="s"></p>
+    <script type="text/javascript"> 
+        var a = "{{word}}";
+        // var a = "{{syn}}";
+        document.getElementById('s').innerHTML= a;
+
+
+        
+     </script>
+
+
+
+
+{% endblock %}
